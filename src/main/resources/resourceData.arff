@@ -1,0 +1,15 @@
+@relation resource_allocation
+
+@attribute cpu_usage numeric
+@attribute memory_usage numeric
+@attribute optimal_instances numeric
+
+@data
+15, 25, 1
+25, 35, 2
+35, 45, 2
+45, 55, 3
+55, 65, 3
+65, 75, 4
+75, 85, 4
+85, 95, 5
