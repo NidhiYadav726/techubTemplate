@@ -19,8 +19,8 @@ import java.util.logging.Logger;
         private ResourcePage resourcePage;
         private int predictedInstances;
 
-        @Given("the AI model is loaded successfully")
-        public void theAIModelIsLoadedSuccessfully() throws Exception {
+        @Given("AI model is loaded successfully")
+        public void AIModelIsLoadedSuccessfully() throws Exception {
             log.info("Loading AI model...");
             resourceMonitor = new ResourceMonitor();
             Assert.assertNotNull(resourceMonitor, "AI Model failed to load.");
@@ -43,7 +43,7 @@ import java.util.logging.Logger;
         @And("tests are executed on the preloaded drivers")
         public void testsAreExecutedOnThePreloadedDrivers() {
             log.info("Executing tests");
-            for (int i = 1; i <= 5; i++) {
+            for (int i = 1; i <= 5; i++){
                 var driver = resourcePage.acquireDriver();
                 if (driver != null) {
                     driver.get("https://saucelabs.com");

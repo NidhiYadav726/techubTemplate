@@ -28,7 +28,7 @@ public class ResourceMonitor {
         Instance instance = createInstance(cpuUsage, memoryUsage);
         double prediction = aiModel.classifyInstance(instance);
 
-        return (int) Math.round(prediction); // Predicted number of browser instances
+        return (int) Math.round(prediction); //Predicted number of browser instances
     }
 
     private Classifier loadAIModel() throws Exception {

@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
             plugin = {"pretty", "html:target/cucumber-reports.html"},
             monochrome = true
     )
-    public class TestRunner extends AbstractTestNGCucumberTests {
+    public class TestRunner extends AbstractTestNGCucumberTests{
         @Override
         @DataProvider(parallel = false)
         public Object[][] scenarios() {

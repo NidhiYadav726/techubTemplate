@@ -67,7 +67,7 @@ public class ResourcePage {
 
             }
         }
-        if (driverPool.isEmpty()) {
+        if (driverPool.isEmpty()){
             log.info("All drivers have been closed and the pool is empty.");
         } else {
             log.warning("Some drivers remain in the pool after closing!");
