@@ -12,13 +12,26 @@ This project leverages AI to predict the optimal number of browser instances for
 ## Setup
 
 ### 1. Clone the repository
-
-
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/testEnvironment.git
+cd testEnvironment
+```
 
 ### 2. Configure WebDriver
 Ensure that you have the appropriate WebDriver (e.g., ChromeDriver) available in your system path, or specify the path explicitly in the ResourcePage class.
 
-4. Train the AI Model
+### 3. Train the AI Model
 The AI model is trained using the modelTrainer class, which uses an ARFF file (resourceData.arff) containing data on CPU and memory usage along with the optimal number of browser instances.
 
 To train the model, run the modelTrainer class:
+```bash
+java -cp target/classes pages.modelTrainer
+```
+This will generate a trained model (resourcesModel.model) that is used in the ResourceMonitor class for predictions.
+
+### 4.  Run Tests
+You can execute the tests with Cucumber using the TestRunner class. To run the tests:
+```bash
+mvn test
+```
