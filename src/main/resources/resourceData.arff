@@ -1,4 +1,4 @@
-@relation resources_allocation
+@relation resource_allocation
 
 @attribute cpu_usage numeric
 @attribute memory_usage numeric

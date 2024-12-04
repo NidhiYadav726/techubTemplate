@@ -19,8 +19,8 @@ import java.util.logging.Logger;
         private ResourcePage resourcePage;
         private int predictedInstances;
 
-        @Given("AI model is loaded successfully")
-        public void AIModelIsLoadedSuccessfully() throws Exception {
+        @Given("the AI model is loaded successfully")
+        public void theAIModelIsLoadedSuccessfully() throws Exception {
             log.info("Loading AI model...");
             resourceMonitor = new ResourceMonitor();
             Assert.assertNotNull(resourceMonitor, "AI Model failed to load.");

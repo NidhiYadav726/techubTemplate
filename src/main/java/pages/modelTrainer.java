@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class modelTrainer {
     private static final Logger log = Logger.getLogger(modelTrainer.class.getName());
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
             //Load resourceData arff file
             String arffFilePath = "src/main/resources/resourceData.arff";
