@@ -26,7 +26,7 @@ The AI model is trained using the modelTrainer class, which uses an ARFF file (r
 
 To train the model, run the modelTrainer class:
 ```bash
-java -cp target/classes pages.modelTrainer
+mvn exec:java -Dexec.mainClass="pages.modelTrainer"
 ```
 This will generate a trained model (resourcesModel.model) that is used in the ResourceMonitor class for predictions.
 
