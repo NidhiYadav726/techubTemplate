@@ -14,7 +14,7 @@ This project leverages AI to predict the optimal number of browser instances for
 ### 1. Clone the repository
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/testEnvironment.git
+git clone https://github.com/NidhiYadav726/techubTemplate.git
 cd testEnvironment
 ```
 
